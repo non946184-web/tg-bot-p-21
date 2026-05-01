@@ -10,16 +10,16 @@ from config import BOT_TOKEN, ADMIN_IDS, DEFAULT_SUBJECTS
 from database import Database
 from parser import TimetableParser
 
-# Настройка логирования
+import asyncio
+import logging
+
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('logs/bot.log', encoding='utf-8'),
-        logging.StreamHandler()
-    ]
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
+
 logger = logging.getLogger(__name__)
+
 
 # Инициализация
 bot = Bot(token=BOT_TOKEN)
