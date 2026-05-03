@@ -10,7 +10,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN', '8508845670:AAGV5s2Rb1F7i6Q1YujQOPmqBuP5JzqCL
 ADMIN_IDS = [5726301150 , 5071633680]  # Замените на реальные Telegram ID
 
 # URL расписания
-TIMETABLE_URL = 'https://rmk.stavedu.ru:8010/moodle/eioswork/timetable/index.php'
+TIMETABLE_URL = 'https://rmk.stavedu.ru:8010/moodle/eioswork/timetable/watchstudent.php?year=2026&month=5&group=238'
 
 # Предметы по умолчанию
 DEFAULT_SUBJECTS = {
